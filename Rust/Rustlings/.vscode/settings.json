@@ -1,0 +1,5 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "~Desktop/rustlings/Cargo.toml"
+    ]
+}
