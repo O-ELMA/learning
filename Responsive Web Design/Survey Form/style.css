@@ -1,0 +1,99 @@
+body {
+	background-image: url(https://images5.alphacoders.com/609/609173.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Dosis', sans-serif;
+}
+
+.general {
+	background-color: rgba(238, 206, 129, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	text-align: center;
+	font-size: 32px;
+}
+
+#survey-form {
+	background-color: rgba(78, 52, 21, 0.8);
+	color: #fff;
+	min-width: 600px;
+	width: fit-content;
+	max-width: 50rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
+	padding: 2rem;
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 20px;
+	text-align: Left;
+}
+
+:focus {
+	outline: 0px;
+}
+
+label {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.format {
+	margin-bottom: 1.25rem;
+}
+
+input,
+button,
+select,
+textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+input[type=text], 
+[type=email],
+[type=number],
+select,
+textarea {
+	display: block;
+	width: 100%;
+	min-width: 35rem;
+	font-size: 18px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	padding: 5px 10px;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+input[type=radio],
+input[type=checkbox] {
+	display: inline-block;
+	min-width: 1.25rem;
+	min-height: 1.25rem;
+	margin-right: 0.5rem;
+}
+
+button {
+	display: block;
+	background-color: #fcab37;
+	padding: 0.5rem;
+	color: white;
+	width: 100%;
+	border-radius: 2px;
+	border: 0px;
+}
+
+textarea {
+	resize: vertical;
+	min-height: 6rem;
+}

@@ -1,0 +1,242 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+body {
+    background-color: #FFF5B7;
+    background: url('https://wallpaperaccess.com/full/1193446.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Grandstander', cursive;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:focus {
+    outline: none;
+}
+
+#nav-bar {
+    display: flex;
+    position: fixed;
+    background-color: #2d220b;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    width: 100%;
+    height: 6rem;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 1;
+}
+
+.overlay {
+    background-color: #5844DBd0;
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+main {
+    display: block;
+    position: relative;
+    margin-top: 6rem;
+}
+
+a {
+    color: #FFF5B7;
+    text-decoration: none;
+    padding-right: 2rem;
+    font-size: 28px;
+}
+
+#header-img {
+    width: 10rem;
+    height: auto;
+    margin-right: 9rem;
+    margin-top: auto;
+}
+
+#hero {
+    display: flex;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+#email {
+    width: 400px;
+    height: 2rem;
+    font-size: 1rem;
+    padding-left: 8px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: #FFF5B7;
+    color: #2d220b;
+    border: 1px solid transparent;
+    width: 200px;
+    height: 2rem;
+    font-family: 'Grandstander', cursive;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2d220b;
+    color: #FFF5B7;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 6px;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.menu-item {
+    display: block;
+    border: 2px solid #2d220b;
+    border-radius: 5px;
+    background-color: #FFF5B7;
+    text-align: center;
+    width: 150px;
+    height: 230px;
+    line-height: 24px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+#video-div {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 3px;
+}
+
+#options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    padding-top: 6rem;
+}
+
+.option {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 22.5rem;
+    width: 17.5rem;
+    border: 3px solid #2d220b;
+    border-radius: 5px;
+    margin: 12px;
+    background-color: #FFF5B7;
+    justify-content: center;
+    text-align: center;
+}
+
+.option h2 {
+    font-size: 26px;
+}
+
+.option p {
+    font-size: 18px;
+    padding: 8px;
+    height: 140px;
+}
+
+input[type="button"] {
+    height: 3rem;
+    width: 14rem;
+    color: #FFF5B7;
+    background-color: #2d220b;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-family: 'Grandstander', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+    background-color: #2d220b;
+    color: #fff;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 2rem;
+    padding-top: 1rem;
+    margin-top: 6rem;
+}
+
+@media (max-width: 940px) {
+    a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 640px) {
+    #header-img {
+        margin-right: 4rem;
+    }
+
+    .menu-item {
+        min-width: 250px;
+        font-size: 26px;
+    }
+
+    .option {
+        height: 38rem;
+    }
+
+    .option h2 {
+        font-size: 32px;
+    }
+
+    .option p {
+        height: auto;
+        font-size: 26px;
+    }
+}

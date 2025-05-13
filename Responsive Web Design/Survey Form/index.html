@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Dark Souls Fan Form</title>
+    </head>
+
+    <body>
+        <div class="general">
+            <header>
+                <h1 id="title">
+                    Dark Souls Fan Form
+                </h1>
+                <p id="description">
+                    <i>Short form about what you like about Dark Souls.</i>
+                </p>
+            </header>
+
+            <main>
+                <form id="survey-form">
+                    <div class="format">
+                        <label for="name" id="name-label">Gamertag</label>
+                        <input id="name" type="text" placeholder="Username" required>
+                    </div>
+                    <div class="format">
+                        <label for="email" id="email-label">Email</label>
+                        <input id="email" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="format">
+                        <label for="number" id="number-label">NG+</label>
+                        <input id="number" type="number" placeholder="New Game Plus" min="1" max="60">
+                    </div>
+                    <div class="format">
+                        <label for="server">What is your favourite Dark Souls series?</label>
+                        <select id="dropdown" name="ng+" required autocomplete="on">
+                            <option value="" selected disabled>Please select your game</option>
+                            <option value="Dark Souls I">Dark Souls I</option>
+                            <option value="Dark Souls II">Dark Souls II</option>
+                            <option value="Dark Souls III">Dark Souls III</option>
+                            <option value="Sekiro">Sekiro</option>
+                            <option value="Elden Ring">Elden Ring</option>
+                        </select>
+                    </div>
+                    <div class="format">
+                        <p id="preference">What is your game style?</p>
+                        <label for="wholesome"><input type="radio" name="preference" id="wholesome" value="wholesome" checked>Strength Build</label>
+                        <label for="comedic"><input type="radio" name="preference" id="comedic" value="comedic">Kata Weilder</label>
+                        <label for="depressing"><input type="radio" name="preference" id="depressing" value="depressing">Mage</label>
+                        <label for="mixture"><input type="radio" name="preference" id="mixture" value="mixture">Level-1-Armourless Runs</label>
+                    </div>
+                    <div class="format">
+                        <p id="checkbox-inquiry">What forms of Dark Souls content do you consume regularly?</p>
+                        <label for="fan-art"><input type="checkbox" value="fan-art" name="fan-art">Games</label>
+                        <label for="fan-fic"><input type="checkbox" value="fan-fic" name="fan-fic">Videos</label>
+                        <label for="doujins"><input type="checkbox" value="doujins" name="doujins">Fan-art</label>
+                        <label for="lewds"><input type="checkbox" value="lewds" name="lewds">Lewds</label>
+                        <label for="other"><input type="checkbox" value="other" name="other">Other</label>
+                    </div>
+                    <div class="format">
+                        <p id="reason-inquiry">What makes you consume Dark Souls content?</p>
+                        <textarea>Anything you can think about</textarea>
+                    </div>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </main>
+        </div>
+    </body>
+</html>
